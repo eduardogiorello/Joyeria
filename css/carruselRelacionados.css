@@ -1,0 +1,93 @@
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+
+
+.carousel__anterior,
+.carousel__siguiente{
+	position:absolute;
+	display:block;
+	width:30px;
+	height:30px;
+	border:none;
+	
+	cursor:pointer;
+	line-height: 30px;
+	text-align: center;
+	background:none;
+	color: #fff;
+	opacity:40%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+	opacity:100%;
+}
+
+.carousel__anterior{
+	left:-40px;
+	top: 35%;
+	
+}
+
+.carousel__siguiente{
+	right:-40px;
+	top: 35%;
+}
+
+.carousel__lista{
+    overflow:hidden;
+	
+}
+
+.carousel__elemento{
+	text-align:center;
+    margin:4px;
+}
+
+.carousel__indicadores .glider-dot{
+	display:block;
+	width:30px;
+	height:4px;
+	background: #fff;
+	opacity:.2;
+	border-radius:0;
+}
+
+.carousel__indicadores .glider-dot:hover{
+	opacity:.5;
+}
+.carousel__indicadores .glider-dot.active{
+	opacity:1;
+}
+
+.carousel__imagen{
+	width:220px;
+	height:180px;
+	border-radius: 6px;
+	border: 3px solid;
+	border-color: rgba(255, 255, 255, 0.144);
+}
+
+.carousel__imagen:hover{
+	border-color: rgb(223, 176, 110);
+}
+
+@media screen and (max-width:800px) {
+	body{
+		padding:40px 0;
+	}
+
+
+	.carousel__indicadores .glider-dot{
+		display:block;
+		width:7px;
+		height:4px;
+		background: #fff;
+		opacity:.2;
+		border-radius:0;
+	}
+	
+}
