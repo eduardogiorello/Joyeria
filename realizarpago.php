@@ -41,7 +41,7 @@ else if(!isset($_POST['btnMercadoPago']) || !isset($_SESSION['carrito'])){
 // SDK de Mercado Pago
 require __DIR__ .  '/vendor/autoload.php';
 // Agrega credenciales
-MercadoPago\SDK::setAccessToken('TEST-3757911879053520-061103-4108f9a4956b703ea706b9205768a2e9-773869997');
+MercadoPago\SDK::setAccessToken('ACA-VA-LA-KEY');
 
 
 // Crea un objeto de preferencia
@@ -69,7 +69,7 @@ $preference->save();
 
 
 
-//curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer TEST-8446464471493494-061103-ef91b984eef2bc10eb7ceb06c81873fa-80875971" "https://api.mercadopago.com/users/test_user" -d "{'site_id':'MLA'}"
+//curl -X POST -H "Content-Type: application/json" -H "Authorization: Bearer KEY-ACA" "https://api.mercadopago.com/users/test_user" -d "{'site_id':'MLA'}"
 
 /*
 {"id":773869997,"nickname":"TESTHZTM3WQR","password":"qatest6307","site_status":"active","email":"test_user_78177107@testuser.com"}
